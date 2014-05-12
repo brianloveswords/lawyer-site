@@ -1,0 +1,64 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+html, body {
+  margin: 0;
+  padding: 0
+}
+body {
+  background: url('images/background-pattern.png');
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  color: #333;
+}
+header {
+  background: #333;
+  font-family: 'EB Garamond', serif;
+  color: #fff;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  line-height: 1.8em;
+}
+header h1, header h2 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  font-size: 2em;
+}
+header h2 {
+  font-size: 1.3em;
+  font-style: italic;
+}
+.main {
+  box-shadow: 0 0 6px 0px #333;
+  margin: auto;
+  width: 784px;
+  background: #fff url('images/hero.jpg') 0 20px no-repeat;
+  padding: 200px 50px;
+}
+.welcome {
+  text-align: center;
+  padding: 0 50px;
+  font-size: 1.5em;
+}
+.contact-us {
+  padding: 2em 50px;
+}
+.contact-us h3 {
+  font-weight: bold;
+  color: #480022;
+  text-transform: uppercase;
+}
+.contact-us address {
+  font-style: normal;
+  float: left;
+  width: 290px;
+  line-height: 1.5em;
+}
+.clearfix {
+  border: 0;
+  clear: both;
+}

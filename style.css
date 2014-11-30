@@ -408,6 +408,11 @@ and (max-device-width : 568px) {
     min-width: inherit;
   }
 
+
+  .about .client-list, .about .areas {
+    list-style: outside;
+  }
+
   .about .areas-of-practice {
     width: 130%;
     padding: 1em 3em;
@@ -440,27 +445,45 @@ and (max-device-width : 568px) {
   }
 
   .team input { display: none; }
-}
+  .team .bio { display: none; }
 
+  .chevron{
+    position:relative;
+    display:inline-block;
+    height:20px;/*height should be double border*/
+  }
 
-.chevron{
-  position:relative;
-  display:block;
-  height:50px;/*height should be double border*/
-}
-.chevron:before,
-.chevron:after{
-  position:absolute;
-  display:block;
-  content:"";
-  border:25px solid transparent;/*adjust size*/
-}
-/*Change four 'top' values below to rotate (top/right/bottom/left)*/
-.chevron:before{
-  top:0;
-  border-top-color:#b00;/*Chevron Color*/
-}
-.chevron:after{
-  top:-10px;/*adjust thickness*/
-  border-top-color:#fff;/*Match background colour*/
+  .chevron:before,
+  .chevron:after{
+    position:absolute;
+    display:inline-block;
+    content:"";
+    border:10px solid transparent;/*adjust size*/
+  }
+  .team input:not(:checked) ~ label .chevron {
+    top: 8px;
+    left: 10px;
+  }
+  .team input:not(:checked) ~ label .chevron:before {
+    top:0;
+    border-top-color:#85090d;/*Chevron Color*/
+  }
+  .team input:not(:checked) ~ label .chevron:after {
+    top:-5px;/*adjust thickness*/
+    border-top-color:#fff;/*Match background colour*/
+  }
+
+  .team input:checked ~ label .chevron {
+    top: -3px;
+    left: 10px;
+  }
+  .team input:checked ~ label .chevron:before {
+    bottom:0;
+    border-bottom-color:#85090d;/*Chevron Color*/
+  }
+  .team input:checked ~ label .chevron:after {
+    bottom:-5px;/*adjust thickness*/
+    border-bottom-color:#fff;/*Match background colour*/
+  }
+  .team input:checked ~ .bio { display: block }
 }

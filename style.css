@@ -3,174 +3,254 @@
 }
 html, body {
   font-family: 'Vollkorn', serif;
-  color: #2d2d2d;
+  color: #404042;
   margin: 0;
   padding: 0;
   background: #e1e1e1;
   height: 100%;
 }
 
-header {
-  margin: 0;
-  height: 60px;
-  border-bottom: 1px solid #c3c3c3;
-  background: #f5f5f5;
-}
-
-.container {
-  width: 940px;
-  margin: auto;
-  position: relative;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-header h1 {
-  font-family: 'Vollkorn', serif;
-  font-weight: normal;
-  color: #fff;
-  position: absolute;
-  z-index: 2;
-  margin: 0 0 0 2em;
-  padding: 0.7em;
-  display: inline-block;
-  background: #85090d;
-  font-size: 190%;
-  line-height: 0.85em;
+
+@media only screen
+and (min-device-width : 569px) {
+  header {
+    margin: 0;
+    height: 60px;
+    border-bottom: 1px solid #c3c3c3;
+    background: #f5f5f5;
+    color: #2d2d2d;
+  }
+
+  .container {
+    width: 940px;
+    margin: auto;
+    position: relative;
+  }
+
+  header h1 {
+    font-family: 'Vollkorn', serif;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    margin: 0 0 0 2em;
+    padding: 0.7em;
+    display: inline-block;
+    background: #85090d;
+    font-size: 190%;
+    line-height: 0.85em;
+  }
+
+  h1 .names {
+    font-size: 65%;
+  }
+
+  header nav {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    left: 100px;
+    float: right;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  header nav a {
+    color: #2d2d2d;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  header nav a.current, nav a.current li {
+    color: white;
+    font-weight: 400;
+    background: #2d2d2d !important;
+  }
+
+  header nav a:hover li {
+    background: white;
+  }
+
+  header nav ul li {
+    vertical-align: top;
+    position: relative;
+    float: left;
+    line-height: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0 1.2em;
+    border-left: 1px solid black;
+  }
+
+  header nav li.telephone {
+    padding-top: 0.70em;
+    line-height: inherit;
+  }
+
+  .main {
+    color: #404042;
+    clear: both;
+    background-color: #fff;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 2em 6em 3em;
+    min-height: 45%;
+  }
+
+  .masthead {
+    margin: 0;
+  }
+
+  .masthead img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  p {
+    color: #404042;
+    font-size: 127%;
+  }
+
+  p.lead {
+    font-size: 180%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+  }
+
+  p.closer {
+    font-style: italic;
+  }
+
+  footer {
+    clear: both;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #404042;
+    color: #fff;
+    font-size: 90%;
+  }
+
+  footer div {
+    margin-bottom: 1em;
+  }
+
+  .footer {
+    padding: 2em 6.8em;
+  }
+
+  footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  footer nav ul li {
+    display: inline-block;
+  }
+
+  footer nav ul li a {
+    color: white;
+  }
+
+  footer nav ul li:after {
+    content: '|';
+    padding: 0 0.58em;
+  }
+  footer nav ul li.last:after {
+    content: '';
+  }
+
+  .main h1 {
+    margin: 2em 0 0.5em 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #404042;
+    text-transform: uppercase;
+  }
+
+  .contact h2 {
+    color: #85090d;
+    font-weight: 600;
+  }
+
+  .contact .office {
+    width: 350px;
+    height: 545px;
+    position: relative;
+  }
+
+  .bergen-county {
+    float: right;
+  }
+
+  .hudson-county {
+    float: left;
+  }
+
+  contact a.button {
+    position: absolute;
+    bottom: 0;
+  }
+
 }
 
-h1 .names {
-  font-size: 65%;
-}
-
-header nav {
-  font-family: 'Source Sans Pro', sans-serif;
-  position: relative;
-  left: 100px;
-  float: right;
-}
-
-header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-header nav a {
-  color: #2d2d2d;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-header nav a.current, nav a.current li {
-  color: white;
-  font-weight: 400;
-  background: #2d2d2d !important;
-}
-
-header nav a:hover li {
-  background: white;
-}
-
-header nav ul li {
-  vertical-align: top;
-  position: relative;
-  float: left;
-  line-height: 60px;
-  height: 60px;
-  margin: 0;
-  padding: 0 1.2em;
-  border-left: 1px solid black;
-}
-
-header nav li.telephone {
-  padding-top: 0.70em;
-  line-height: inherit;
-}
-
-.main {
-  color: #404042;
+hr.clearfix {
+  border: 0;
   clear: both;
-  background-color: #fff;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  padding: 2em 6em 3em;
-  min-height: 45%;
+  color: #fff;
+  margin-bottom: 3em;
 }
 
-.masthead {
-  margin: 0;
+address {
+  font-style: normal;
+  font-size: 120%;
 }
 
-.masthead img {
+.contact a {
+  color: #404042;
+}
+
+.contact a.button {
   display: block;
-  position: relative;
-  z-index: 1;
+  text-decoration: none;
+  border: 0;
+  text-align: center;
   width: 100%;
-}
-
-p {
-  color: #404042;
-  font-size: 127%;
-}
-
-p.lead {
-  font-size: 180%;
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 0;
-}
-
-p.closer {
-  font-style: italic;
-}
-
-footer {
-  clear: both;
-  font-family: 'Source Sans Pro', sans-serif;
-  background: #404042;
   color: #fff;
-  font-size: 90%;
-}
-
-footer div {
-  margin-bottom: 1em;
-}
-
-.footer {
-  padding: 2em 6.8em;
-}
-
-footer nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-footer nav ul li {
-  display: inline-block;
-}
-
-footer nav ul li a {
-  color: white;
-}
-
-footer nav ul li:after {
-  content: '|';
-  padding: 0 0.58em;
-}
-footer nav ul li.last:after {
-  content: '';
-}
-
-.main h1 {
-  margin: 2em 0 0.5em 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  background: #85090d;
+  font-size: 200%;
   font-weight: 600;
-  color: #404042;
-  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0.25em;
 }
+
+.team h2 {
+  background: #e1e1e1;
+  color: #85090d;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 0 0.5em;
+}
+
+.team .name {
+  color: #779cc2;
+  font-size: 175%;
+  font-weight: normal;
+  margin: 0 0 0 0.25em;
+}
+
+.team p {
+  margin-left: 0.25em;
+}
+
 
 .about .clients h2 {
   border-bottom: 1px solid black;
@@ -207,72 +287,150 @@ footer nav ul li.last:after {
   color: #2d2d2d;
 }
 
-.team h2 {
-  background: #e1e1e1;
-  color: #85090d;
-  text-transform: uppercase;
-  font-weight: normal;
-  padding: 0 0.5em;
-}
 
-.team .name {
-  color: #779cc2;
-  font-size: 175%;
-  font-weight: normal;
-  margin: 0 0 0 0.25em;
-}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .masthead { display: none }
 
-.team p {
-  margin-left: 0.25em;
-}
+  header {
+    position: relative;
+    background: #85090d;
+    color: white;
+  }
 
-.contact h2 {
-  color: #85090d;
-  font-weight: 600;
-}
+  #menu-toggle { display: none; }
 
-.contact .office {
-  width: 350px;
-  height: 545px;
-  position: relative;
-}
+  #menu-toggle:checked ~ nav {
+    display: block;
+  }
 
-.bergen-county {
-  float: right;
-}
+  #menu-toggle:checked ~ label:before {
+    position: relative;
+    left: -0.12em;
+    content: "\0d7";
+    color: black;
+  }
 
-.hudson-county {
-  float: left;
-}
+  #menu-toggle:not(:checked) ~ label:before {
+    content:'\2630';
+  }
 
-hr.clearfix {
-  border: 0;
-  clear: both;
-  color: #fff;
-  margin-bottom: 3em;
-}
+  header .hamburger {
+    position: absolute;
+    right: 0.3em;
+    font-size: 3em;
+    text-align: right;
+  }
 
-address {
-  font-style: normal;
-  font-size: 120%;
-}
+  header nav {
+    width: 100%;
+    background: #85090d;
+    position: absolute;
+    display: none
+  }
 
-.contact a {
-  color: #404042;
-}
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1em;
+  }
 
-.contact a.button {
-  display: block;
-  text-decoration: none;
-  position: absolute;
-  bottom: 0;
-  border: 0;
-  text-align: center;
-  width: 100%;
-  color: #fff;
-  background: #85090d;
-  font-size: 200%;
-  font-weight: 600;
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 0.25em;
+
+  header nav a {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+  }
+
+
+  header nav ul li {
+    text-align: center;
+    padding: 0.33em 0;
+  }
+
+  header nav .telephone { display: none; }
+
+  header h1 {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 1em;
+    padding: 0.6em 1em;
+  }
+
+  header .names {
+    font-size: 0.7em;
+  }
+
+  .main, footer{
+    padding: 1em 1.5em;
+  }
+
+  .main {
+    overflow: hidden;
+    background: white;
+  }
+
+  footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #404042;
+    color: #fff;
+    font-size: 0.75em;
+  }
+
+  footer div {
+    margin-bottom: 0.5em;
+  }
+
+  footer nav { display: none; }
+
+  .home p {
+    color: #404042;
+    font-size: 127%;
+  }
+
+  .home p.lead {
+    font-size: 180%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+  }
+
+  .home p.closer {
+    font-style: italic;
+  }
+
+  .about .client-list, .about .areas {
+    min-width: inherit;
+  }
+
+  .about .areas-of-practice {
+    width: 130%;
+    padding: 1em 3em;
+    left: -3em;
+  }
+
+  .contact iframe {
+    width: 100%;
+  }
+
+  .contact a.button {
+    margin: 0.75em 0;
+  }
+
+  .contact .office {
+    margin-bottom: 3.3em;
+    padding-bottom: 1.75em;
+    border-bottom: 1px solid black;
+  }
+
+  .contact .office:last-of-type {
+    border-bottom: none;
+    margin-bottom: 1em;
+    padding-bottom: 0;
+  }
+
 }

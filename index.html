@@ -24,15 +24,19 @@
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <meta name="msapplication-TileColor" content="#b91d47">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
       <div class="container">
         <h1>
           The Law Office of <br>
-          <span class="names">Netchert, Dineen & Hillmann</span>
+          <span class="names">Netchert, Dineen &amp; Hillmann</span>
         </h1>
+
+        <input type="checkbox" id="menu-toggle">
+        <label class="hamburger" for="menu-toggle"></label>
+
         <nav>
           <ul>
             <a href="/" class="current"><li>Home</li></a>
@@ -52,7 +56,7 @@
       <img src="hero.jpg" alt="Proven Experience, Creative Solutions">
     </div>
 
-    <div class="main container">
+    <div class="main home container">
       <p class="lead">
         Netchert, Dineen & Hillmann is a diverse general practice law
         firm that handles a wide range of litigation arising out of

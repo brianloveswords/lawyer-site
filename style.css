@@ -1,64 +1,278 @@
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
+}
 html, body {
-  margin: 0;
-  padding: 0
-}
-body {
-  background: url('images/background-pattern.png');
-  font-family: 'Open Sans', sans-serif;
-  font-size: 100%;
-  color: #333;
-}
-header {
-  background: #333;
-  font-family: 'EB Garamond', serif;
-  color: #fff;
-  margin: 0;
-  padding: 1em 0;
-  text-align: center;
-  line-height: 1.8em;
-}
-header h1, header h2 {
-  font-weight: normal;
+  font-family: 'Vollkorn', serif;
+  color: #2d2d2d;
   margin: 0;
   padding: 0;
+  background: #e1e1e1;
+  height: 100%;
 }
-header h1 {
-  font-size: 2em;
+
+header {
+  margin: 0;
+  height: 60px;
+  border-bottom: 1px solid #c3c3c3;
+  background: #f5f5f5;
 }
-header h2 {
-  font-size: 1.3em;
-  font-style: italic;
-}
-.main {
-  box-shadow: 0 0 6px 0px #333;
+
+.container {
+  width: 940px;
   margin: auto;
-  width: 784px;
-  background: #fff url('images/hero.jpg') 0 20px no-repeat;
-  padding: 200px 50px;
+  position: relative;
 }
-.welcome {
-  text-align: center;
-  padding: 0 50px;
-  font-size: 1.5em;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
-.contact-us {
-  padding: 2em 50px;
+
+header h1 {
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  margin: 0 0 0 2em;
+  padding: 0.7em;
+  display: inline-block;
+  background: #85090d;
+  font-size: 190%;
+  line-height: 0.85em;
 }
-.contact-us h3 {
-  font-weight: bold;
-  color: #480022;
+
+h1 .names {
+  font-size: 65%;
+}
+
+header nav {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  left: 100px;
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav a {
+  color: #2d2d2d;
+  font-weight: 600;
   text-transform: uppercase;
 }
-.contact-us address {
-  font-style: normal;
-  float: left;
-  width: 290px;
-  line-height: 1.5em;
+
+header nav a.current, nav a.current li {
+  color: white;
+  font-weight: 400;
+  background: #2d2d2d !important;
 }
-.clearfix {
+
+header nav a:hover li {
+  background: white;
+}
+
+header nav ul li {
+  vertical-align: top;
+  position: relative;
+  float: left;
+  line-height: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0 1.2em;
+  border-left: 1px solid black;
+}
+
+header nav li.telephone {
+  padding-top: 0.70em;
+  line-height: inherit;
+}
+
+.main {
+  color: #404042;
+  clear: both;
+  background-color: #fff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 2em 6em;
+  min-height: 45%;
+}
+
+.masthead {
+  margin: 0;
+}
+
+.masthead img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+p {
+  color: #404042;
+  font-size: 127%;
+}
+
+p.lead {
+  font-size: 180%;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+p.closer {
+  font-style: italic;
+}
+
+footer {
+  clear: both;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #404042;
+  color: #fff;
+  font-size: 90%;
+}
+
+footer div {
+  margin-bottom: 1em;
+}
+
+.footer {
+  padding: 2em 6.8em;
+}
+
+footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer nav ul li {
+  display: inline-block;
+}
+
+footer nav ul li a {
+  color: white;
+}
+
+footer nav ul li:after {
+  content: '|';
+  padding: 0 0.58em;
+}
+footer nav ul li.last:after {
+  content: '';
+}
+
+.main h1 {
+  margin: 2em 0 0.5em 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  color: #404042;
+  text-transform: uppercase;
+}
+
+.about .clients h2 {
+  border-bottom: 1px solid black;
+  color: #85090d;
+  font-size: 170%;
+  font-weight: normal;
+  padding-bottom: 0.75em;
+}
+
+.about .client-list, .about .areas {
+  font-size: 110%;
+  min-width: 365px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: inside;
+}
+
+.about li {
+  padding: 0.5em 0 0 0;
+}
+
+.areas-of-practice {
+  position: relative;
+  margin-top: 3em;
+  background: #e1e1e1;
+  border-top: 13px solid #779cc2;
+  width: 110%;
+  left: -5%;
+  padding: 0 0 2em 5%;
+}
+
+.areas-of-practice h2 {
+  color: #2d2d2d;
+}
+
+.team h2 {
+  background: #e1e1e1;
+  color: #85090d;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 0 0.5em;
+}
+
+.team .name {
+  color: #779cc2;
+  font-size: 175%;
+  font-weight: normal;
+  margin: 0 0 0 0.25em;
+}
+
+.team p {
+  margin-left: 0.25em;
+}
+
+.contact h2 {
+  color: #85090d;
+  font-weight: 600;
+}
+
+.contact .office {
+  width: 350px;
+  height: 545px;
+  position: relative;
+}
+
+.bergen-county {
+  float: right;
+}
+
+.hudson-county {
+  float: left;
+}
+
+hr.clearfix {
   border: 0;
   clear: both;
+  color: #fff;
+  margin-bottom: 3em;
+}
+
+address {
+  font-style: normal;
+  font-size: 120%;
+}
+
+.contact a {
+  color: #404042;
+}
+
+.contact a.button {
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background: #85090d;
+  font-size: 200%;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0.25em;
 }

@@ -248,7 +248,6 @@ address {
   background: #2d2d2d;
 }
 
-
 .team h2 {
   background: #e1e1e1;
   color: #85090d;
@@ -268,6 +267,9 @@ address {
   margin-left: 0.25em;
 }
 
+.team .bio {
+  margin-bottom: 3em;
+}
 
 .about .clients h2 {
   border-bottom: 1px solid black;
@@ -303,7 +305,6 @@ address {
 .areas-of-practice h2 {
   color: #2d2d2d;
 }
-
 
 @media only screen
 and (min-device-width : 320px)

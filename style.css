@@ -178,10 +178,6 @@ and (min-device-width : 569px) {
     text-transform: uppercase;
   }
 
-  .contact h2 {
-    color: #85090d;
-    font-weight: 600;
-  }
 
   .contact .office {
     width: 350px;
@@ -202,6 +198,11 @@ and (min-device-width : 569px) {
     bottom: 0;
   }
 
+}
+
+.contact h2 {
+  color: #85090d;
+  font-weight: 600;
 }
 
 hr.clearfix {
@@ -328,6 +329,7 @@ and (max-device-width : 568px) {
     width: 100%;
     background: #85090d;
     position: absolute;
+    z-index: 2;
     display: none
   }
 
@@ -336,7 +338,6 @@ and (max-device-width : 568px) {
     margin: 0;
     padding: 0 0 1em;
   }
-
 
   header nav a {
     font-family: 'Source Sans Pro', sans-serif;

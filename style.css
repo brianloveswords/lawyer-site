@@ -311,7 +311,6 @@ and (max-device-width : 568px) {
     position: relative;
     left: -0.12em;
     content: "\0d7";
-    color: black;
   }
 
   #menu-toggle:not(:checked) ~ label:before {

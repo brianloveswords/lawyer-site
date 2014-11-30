@@ -17,7 +17,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen
 and (min-device-width : 569px) {
-  input, label { display: none; }
+  input { display: none; }
+
+  .chevron {display: none}
+
+  header label { display: none; }
 
   header {
     margin: 0;
@@ -411,12 +415,9 @@ and (max-device-width : 568px) {
   }
 
   .about .client-list, .about .areas {
-    min-width: inherit;
-  }
-
-
-  .about .client-list, .about .areas {
     list-style: outside;
+    margin-left: 1em;
+    min-width: inherit;
   }
 
   .about .areas-of-practice {

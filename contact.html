@@ -130,9 +130,10 @@
       </div>
     </footer>
 
-    <script src="fastclick.js">
+    <script src="fastclick.js"></script>
     <script>
       if ('addEventListener' in document) {
+        console.log('lol');
         document.addEventListener('DOMContentLoaded', function() {
           FastClick.attach(document.body);
         }, false);

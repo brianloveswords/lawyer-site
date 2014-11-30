@@ -181,8 +181,12 @@ and (min-device-width : 569px) {
 
   .contact .office {
     width: 350px;
-    height: 545px;
+    height: 560px;
     position: relative;
+  }
+
+  .contact iframe {
+    margin-bottom: 1em;
   }
 
   .bergen-county {

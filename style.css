@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+footer .copyright:before {
+  content: "© 2015 ";
+}
+
 @media only screen
 and (min-device-width : 569px) {
   input { display: none; }
@@ -164,6 +168,10 @@ and (min-device-width : 569px) {
 
   footer nav ul li a {
     color: white;
+  }
+
+  footer nav ul li a:hover {
+    color: #e1e1e1;
   }
 
   footer nav ul li:after {
